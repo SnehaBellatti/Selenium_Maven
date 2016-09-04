@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [DeltaSuite]">
+  <parameter name="browser" value="firefox"/>
+  <parameter name="huburl" value="http://10.10.4.12:4444/wd/hub"/>
+  <test name="AutomationTest1(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="delta.main.DeltaDriver">
+        <methods>
+          <include name="testScenerios"/>
+          <include name="launchApp"/>
+          <include name="initFrameWork"/>
+        </methods>
+      </class> <!-- delta.main.DeltaDriver -->
+    </classes>
+  </test> <!-- AutomationTest1(failed) -->
+</suite> <!-- Failed suite [DeltaSuite] -->
